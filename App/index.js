@@ -1,6 +1,9 @@
 import React from "react";
+import Navigation from "./config/Navigation";
+import { ConversionContextProvider } from "./util/ConversionContext";
 
-import home from "./screens/Home";
-import Home from "./screens/Home";
-export default () => <Home/>;
-
+export default () => (
+  <ConversionContextProvider>
+    <Navigation />
+  </ConversionContextProvider>
+);
